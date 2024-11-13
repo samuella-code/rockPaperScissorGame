@@ -1,0 +1,22 @@
+body{
+  width: 80%;
+  margin:40px auto;
+  text-align:center ;
+}
+.choices{
+  margin-bottom: 20px;
+}
+button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+cursor: pointer;
+}
+button:hover{
+  background-color: #ccc;
+}
+.result{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
