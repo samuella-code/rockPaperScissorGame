@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rock paper and scissors</title>
+  <title>Rock, Paper, Scissors Game</title>
   <link rel="stylesheet" href="rock.css">
 </head>
 <body>
   <div class="game-container">
-    <h1>Rock Paper Scissor</h1>
-    <div class="choices">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissor">Scissor</button>
-
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="game-options">
+      <button class="round-button" data-rounds="3">Play game of 3</button>
+      <button class="round-button" data-rounds="5">Play game of 5</button>
     </div>
-    <div class="result">
-      <p id="computer-choice"></p>
-      <p id="game-result"></p>
+    <div id="game-buttons" class="hidden">
+      <button class="choice cute-button" data-choice="rock">&#9994; Rock</button>
+      <button class="choice cute-button" data-choice="paper">&#9995; Paper</button>
+      <button class="choice cute-button" data-choice="scissors">&#9996; Scissors</button>
     </div>
-    <script src="rock.js"></script>
+    <p id="result">Choose your game mode to start!</p>
+    <div class="scoreboard">
+      <p>Player Score: <span id="player-score">0</span></p>
+      <p>Computer Score: <span id="computer-score">0</span></p>
+    </div>
   </div>
-
+  <script src="rock.js"></script>
 </body>
 </html>

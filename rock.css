@@ -1,22 +1,76 @@
-body{
-  width: 80%;
-  margin:40px auto;
-  text-align:center ;
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background-color: #ffebf0;
+  margin: 0;
+  padding: 20px;
 }
-.choices{
+
+.game-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  color: #ff69b4;
   margin-bottom: 20px;
 }
-button{
-  padding: 10px 20px;
+
+.game-options {
+  margin-bottom: 20px;
+}
+
+.round-button {
+  background-color: #ff69b4;
+  color: white;
   border: none;
-  border-radius: 5px;
-cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-button:hover{
-  background-color: #ccc;
+
+.round-button:hover {
+  transform: scale(1.1);
 }
-.result{
-  font-size: 24px;
-  font-weight: bold;
+
+.cute-button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cute-button:hover {
+  background-color: #ff85a2;
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.scoreboard {
+  background-color: #ffe4e9;
+  border-radius: 10px;
+  padding: 10px;
   margin-top: 20px;
 }
